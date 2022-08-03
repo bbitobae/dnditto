@@ -1,0 +1,25 @@
+@import "src/variables";
+
+.stat {
+  @include roboto-font-thin;
+  font-size: 15pt
+}
+
+.name {
+  @include roboto-font;
+  text-transform: Uppercase;
+  font-size: 13pt;
+  line-height: 2;
+}
+
+.ac {
+  color: darkgray;
+}
+
+.hp {
+  color: darkred
+}
+
+.inv {
+  color: cornflowerblue;
+}

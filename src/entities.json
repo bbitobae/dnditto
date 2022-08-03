@@ -1,0 +1,76 @@
+{
+    "campaign-id": "uuid-0",
+    "campaign-name": "A reactive journey",
+    "entities": [
+        {
+            "id": "uuid-1",
+            "name": "alice",
+            "player": true,
+            "class": "barbarian",
+            "race": "human",
+            "alignment": "neutral neutral",
+            "level": 8,
+            "hp": 15,
+            "hp-total": 30,
+            "ac": 17,
+            "initiative": 19
+        },
+        {
+            "id": "uuid-5",
+            "name": "goblin",
+            "player": false,
+            "hp": 10,
+            "hp-total": 15,
+            "ac": 9,
+            "initiative": 6
+        },
+        {
+            "id": "uuid-2",
+            "name": "bob",
+            "player": true,
+            "class": "cleric",
+            "race": "high elf",
+            "alignment": "chaotic good",
+            "level": 7,
+            "hp": 23,
+            "hp-total": 40,
+            "ac": 28,
+            "initiative": 25
+        },
+        {
+            "id": "uuid-3",
+            "name": "charlie",
+            "player": true,
+            "class": "paladin",
+            "race": "dwarf",
+            "alignment": "lawful good",
+            "level": 10,
+            "hp": 4,
+            "hp-total": 19,
+            "ac": 26,
+            "initiative": 1
+        },
+        {
+            "id": "uuid-6",
+            "name": "hobgoblin",
+            "player": false,
+            "hp": 13,
+            "hp-total": 14,
+            "ac": 7,
+            "initiative": 18
+        },
+        {
+            "id": "uuid-4",
+            "name": "dan",
+            "player": true,
+            "class": "thief",
+            "race": "dragonborn",
+            "alignment": "chaotic evil",
+            "level": 13,
+            "hp": 33,
+            "hp-total": 33,
+            "ac": 15,
+            "initiative": 12
+        }
+    ]
+}

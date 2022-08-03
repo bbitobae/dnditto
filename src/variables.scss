@@ -1,0 +1,14 @@
+$backround-light: white;
+$foreground-light: gray;
+$font-default: "Roboto", sans-serif, 20pt;
+
+
+@mixin roboto-font {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 12pt;
+}
+
+@mixin roboto-font-thin {
+  font-family: "Roboto Thin", sans-serif;
+  font-size: 12pt;
+}

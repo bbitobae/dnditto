@@ -1,0 +1,74 @@
+
+.entity {
+    margin-bottom: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+@mixin border-glow($color) {
+    outline: none;
+    box-shadow: 0 0 10px $color;
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@mixin border-glow-pulse($color) {
+    @include border-glow($color);
+    box-shadow: 0 0 15px $color;
+    animation: pulsate-#{$color} 2s ease-out infinite;
+
+    @-webkit-keyframes pulsate-#{$color} {
+        0%   { box-shadow: 0 0 5px $color; }
+        10%   { box-shadow: 0 0 7px $color; }
+        20%   { box-shadow: 0 0 9px $color; }
+        30%   { box-shadow: 0 0 11px $color; }
+        40%   { box-shadow: 0 0 13px $color; }
+        50%  { box-shadow: 0 0 15px $color; }
+        60%  { box-shadow: 0 0 13px $color; }
+        70%  { box-shadow: 0 0 11px $color; }
+        80%  { box-shadow: 0 0 9px $color; }
+        90%  { box-shadow: 0 0 7px $color; }
+        100% { box-shadow: 0 0 5px $color; }
+    }
+
+    @keyframes pulsate-#{$color} {
+        0%   { box-shadow: 0 0 5px $color; }
+        10%   { box-shadow: 0 0 7px $color; }
+        20%   { box-shadow: 0 0 9px $color; }
+        30%   { box-shadow: 0 0 11px $color; }
+        40%   { box-shadow: 0 0 13px $color; }
+        50%  { box-shadow: 0 0 15px $color; }
+        60%  { box-shadow: 0 0 13px $color; }
+        70%  { box-shadow: 0 0 11px $color; }
+        80%  { box-shadow: 0 0 9px $color; }
+        90%  { box-shadow: 0 0 7px $color; }
+        100% { box-shadow: 0 0 5px $color; }
+    }
+
+
+}
+
+.neutral {
+    border-color: lightgray;
+}
+
+.selected {
+    border-color: cornflowerblue;
+    @include border-glow(cornflowerblue)
+}
+
+.attack {
+    border-color: darkred;
+    @include border-glow-pulse(darkred)
+}
+
+.heal {
+    border-color: green;
+    @include border-glow-pulse(green)
+}
+

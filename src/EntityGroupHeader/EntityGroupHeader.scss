@@ -1,0 +1,13 @@
+@import "src/variables";
+
+.head-group {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.head {
+  @include roboto-font-thin;
+  text-transform: Uppercase;
+  font-size: 10pt;
+  color: grey;
+}
