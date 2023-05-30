@@ -1,10 +1,14 @@
+import Info, {ArmourClass, Health, Initiative} from "./Info";
 
 export default abstract class Character {
 
-    constructor(
+    protected constructor(
         public id: string,
-        public name: string,
-        public initiative: number,
-        public health: number,
-        public ac: number) {}
+        public cid: String,
+        public info: Info,
+        public hp: Health,
+        public inv: Initiative,
+        public ac: ArmourClass,
+    ) {}
 }
+

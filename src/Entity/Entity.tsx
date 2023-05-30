@@ -42,7 +42,7 @@ export default function Entity(props: IEntityProps) {
     const { currentAction, setActionCallback } = useActionContext()
 
 
-    return(
+    return (
         <div onClick= { () => selectionToggle(props.id) }>
             <MDBRow className={`entity d-flex justify-content-center ${selectedEntity === props.id ? currentAction : 'neutral'}`}>
 

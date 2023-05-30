@@ -1,26 +1,16 @@
 import Character from './Character';
+import Info, {ArmourClass, Health, Initiative, PlayerInfo} from "./Info";
 
 export default class Player extends Character {
 
-    level: number | undefined;
-    className: string | undefined; 
-    race: string | undefined; 
-    alignment: string | undefined;
-
     constructor(
         id: string,
-        name: string,
-        initiative: number,
-        health: number,
-        ac: number,
-        level: number | undefined,
-        className: string | undefined,
-        race: string | undefined,
-        alignment: string | undefined) {
-            super(id, name, initiative, health, ac)
-            this.level = level;
-            this.className = className;
-            this.race = race;
-            this.alignment = alignment;
-        }
+        cid: String,
+        info: PlayerInfo,
+        hp: Health,
+        inv: Initiative,
+        ac: ArmourClass,
+    ) {
+        super(id, cid, info, hp, inv, ac)
+    }
 }

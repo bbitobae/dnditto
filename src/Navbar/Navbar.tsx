@@ -37,6 +37,11 @@ export default function Navbar() {
         <MDBNavbar>
             <MDBContainer tag="form" fluid className="justify-content-end">
                 <div>
+                    <MDBBtn color="primary" className="me-2"  type="button">
+                        +
+                    </MDBBtn>
+                </div>
+                <div>
                     <MDBBtn outline={!attacking} color="danger" className="me-2" type="button" onClick={() => toggleAction(attacking, setAttacking, healing, setHealing)}>
                         Attack
                     </MDBBtn>
